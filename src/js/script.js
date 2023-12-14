@@ -18,7 +18,6 @@ const resetCount = () => {
 
 const buttonBack = (title, position, divResult, count) => {
     const buttonBack = document.querySelectorAll("button")[0];
-    console.log(buttonBack);
     buttonBack.style.cursor = "pointer";
 
     const h1 = divResult.querySelector("h1");
@@ -61,15 +60,10 @@ const matchNumber = () => {
     buttonGame.addEventListener("click", () => {
         const check = checkInput();
         count = count + 1;
-        console.log(count);
-        
-        
-        
+
         const result = randomNumberFunction();
         
         if(result === check) {
-            console.log("Acertou")
-            console.log(result, check)
             
             title.style.display = "none";
             position.style.display = "none";
@@ -82,9 +76,6 @@ const matchNumber = () => {
             
             pAnimation();
             p.innerHTML = `Errou! o número é ${result}`;
-            
-            console.log("ERROU")
-            console.log(result, check)
             
         }
     })
