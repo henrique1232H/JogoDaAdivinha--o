@@ -137,6 +137,6 @@ p {
 
 @media (min-width: 80rem) {
     .block {
-        width: 50%;
+        width: 40%;
     }
 }

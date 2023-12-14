@@ -12,7 +12,7 @@ const  checkInput = () => {
 }
 
 const resetCount = () => {
-    count = 0
+    count = 0;
 }
 
 
@@ -76,10 +76,12 @@ const matchNumber = () => {
             
             pAnimation();
             p.innerHTML = `Errou! o número é ${result}`;
+            p.style.display = "flex";
+            p.style.justifyContent = " center";
             
-        }
-    })
-}
+        };
+    });
+};
 
 
-matchNumber()
+matchNumber();
