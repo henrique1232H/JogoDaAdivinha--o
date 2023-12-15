@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: background 2s 0.5ms ease alternate infinite;
+    animation: background 5s 0.5ms ease alternate infinite;
     background-size: 200% 200%;
 }
 

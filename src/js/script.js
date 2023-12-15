@@ -59,6 +59,16 @@ const buttonBack = () => {
         resetP();
         
     })
+    
+    addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+            takeQuery.divResult.style.display = "none";
+            takeQuery.title.style.display = "block";
+            takeQuery.position.style.display = "block";
+            resetCount();
+            resetP();
+        }
+    })
 }
 
 
