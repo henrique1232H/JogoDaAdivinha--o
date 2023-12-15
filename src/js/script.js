@@ -78,8 +78,8 @@ const match = () => {
     const check = checkInput();
     
     if(check > 10) {
-        p.innerHTML = " *Insira um número entre 1 e 10";
-        p.style.color = "red";
+        takeQuery.p.innerHTML = " *Insira um número entre 1 e 10";
+        takeQuery.p.style.color = "red";
         return;
     }
     
