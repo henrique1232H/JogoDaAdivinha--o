@@ -124,7 +124,7 @@ const matchNumber = () => {
     });
 };
 
-const addKeyEnter = (e) => {
+const addKeyEnter = () => {
 
    addEventListener("keypress", (e) => {
      if(e.key === "Enter"){
