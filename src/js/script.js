@@ -57,6 +57,7 @@ const buttonBack = () => {
         takeQuery.position.style.display = "block";
         resetCount();
         resetP();
+        addKeyEnter();
         
     })
     
@@ -67,6 +68,7 @@ const buttonBack = () => {
             takeQuery.position.style.display = "block";
             resetCount();
             resetP();
+            addKeyEnter();
         }
     })
 }
