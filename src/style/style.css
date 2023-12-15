@@ -14,12 +14,13 @@
 
 
 body {
-    background: linear-gradient(#00DDFB, #00709F);
+    background: linear-gradient(42deg,#00DDFB, #00709F);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: background 15s 0.5ms alternate infinite;
+    animation: background 2s 0.5ms ease alternate infinite;
+    background-size: 200% 200%;
 }
 
 
@@ -145,27 +146,29 @@ p {
 
 @keyframes background {
     0% {
-        background: linear-gradient(#00DDFB, #00709F);
+        background-position: 0% 100%;
+
     }
 
     25% {
-        background: linear-gradient(#01c1db, #0176a8);
+        background-position: 25% 75%;
+
     }
 
     50% {
-        background: linear-gradient(#0197ab, #0497d5);
+        background-position: 50% 50%;
     }
 
     75% {
-        background: linear-gradient(#026b79, #029fe3);
+        background-position: 75% 25%;
     }
 
     90% {
-        background: linear-gradient(#02545f, #01a5ec);
+        background-position: 90% 10%;
     }
 
     100% {
-        background: linear-gradient(#00709F, #00DDFB);
+        background-position: 100% 0%;
     }
 }
 
