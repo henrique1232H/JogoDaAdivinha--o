@@ -19,6 +19,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: background 15s 0.5ms alternate infinite;
 }
 
 
@@ -142,8 +143,45 @@ p {
 
 }
 
+@keyframes background {
+    0% {
+        background: linear-gradient(#00DDFB, #00709F);
+    }
+
+    25% {
+        background: linear-gradient(#01c1db, #0176a8);
+    }
+
+    50% {
+        background: linear-gradient(#0197ab, #0497d5);
+    }
+
+    75% {
+        background: linear-gradient(#026b79, #029fe3);
+    }
+
+    90% {
+        background: linear-gradient(#02545f, #01a5ec);
+    }
+
+    100% {
+        background: linear-gradient(#00709F, #00DDFB);
+    }
+}
+
 @media (min-width: 80rem) {
     .block {
         width: 40%;
+    }
+}
+
+
+@media (max-width: 40rem) {
+    .block {
+        height: auto;
+    }
+
+    h1 {
+        font-size: 2rem;
     }
 }
